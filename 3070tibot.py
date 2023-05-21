@@ -56,19 +56,19 @@ def create_driver():
     options = Options()
     options.headless = False  # Change To False if you want to see Firefox Browser Again.
     profile = webdriver.FirefoxProfile(
-        r'/Users/caleb/Library/Application Support/Firefox/Profiles/c0lp2eyq.default-release')
+        r'') #place your firefox profile in between the quotes
     web_driver = webdriver.Firefox(profile, options=options, executable_path=GeckoDriverManager().install())
     return web_driver
 
 
 # 3. credit card CVV Number
-CVV = '270'  # You can enter your CVV number here in quotes.
+#CVV = ''  # You can enter your CVV number here in quotes.
 
 # 4. Twilio Account
-toNumber = '3162593734'
+toNumber = '' # you can enter your phone number here
 fromNumber = '+19405148843'
-accountSid = 'AC385997269e5294173b666548f8a08855'
-authToken = '41c13150516f27955a1e8f1cbbc46d07'
+accountSid = '' # You can enter your account SID here
+authToken = '' # Authentication token
 client = Client(accountSid, authToken)
 
 # ----------------------------------------------------------------------------------------------------------------------
